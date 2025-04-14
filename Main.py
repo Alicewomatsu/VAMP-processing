@@ -84,7 +84,7 @@ run_plot_results = False
 #position base frequency calculation
 
 run_VAMP_analysis = True
-VAMP_para = r'D:\Boston college\PhD PROJECT\Experiment\AAV\IRES\2024-06-07_PacBio_Data\para_EMCV.csv'
+VAMP_para = r'Sample parameter files/para_MmPyltR_Q20.csv'
 
 # please list your pairs in order from 5 to 3
 
