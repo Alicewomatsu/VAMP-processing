@@ -40,7 +40,7 @@ from VAMP_processing import VAMP_processing
 # SETUP
 
 # Copy the parameter file name and enter it here as a raw string (r'string')
-parameter_file_name = r'D:\Boston college\PhD PROJECT\Experiment\AAV\IRES\2024-06-07_PacBio_Data\Illumina_processing_parameters_EMCV_VAMP.csv'
+parameter_file_name = r'Sample parameter files/Illumina_processing_parameters_MmPyltR_VAMP.csv'
 # Which parts of the program do you want to run?
 
 # find_fastq_files identifies the files associated with each biosample
