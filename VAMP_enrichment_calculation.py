@@ -46,10 +46,11 @@ def log2_fold_enrichment_calculation_N_tile(data_folder_name, Selection, biosamp
             #if the WT sequence did not show up, then no normalization can be done for VAMP.
         else:
             for base in bases:
-                if biosample_data_list[0][i][base] == 0:
+                if biosample_data_list[0][i][base] == 0.0:
                     position_base_enrichment_ave[base][i] = 'This mutants does not exist in input.'
                     missed_base_mutant.append(f'{i+1} : {base}')
-                position_base_enrichment_ave[base][i] = (
+                else:
+                    position_base_enrichment_ave[base][i] = (
                     (biosample_data_list[1][i][base] + biosample_data_list[2][i][base])/(2*biosample_data_list[0][i][base]))
 
         #Calculating the enrichment of each base at each position
