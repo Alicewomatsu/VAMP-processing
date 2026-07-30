@@ -12,8 +12,8 @@ First is the Main_VAMP.csv. The filing guidance is basically as same as VADER co
 
 Second is Analysis_VAMP.csv. The wild type sequence will be filled at Row 4: WT_sequence in RNA format. Feature_annotation is default to be true for annotating regions of tRNA with color assigned at Row 6-8. Default annotation is only for stem region. You can change it if you prefer other way to highlight the result in the final weblogo. Row 10 is the name of final .svg Weblogo file. Row 11-12 is the position of all base pairs, listed as 5' and 3' bases positions. 
 
-#Run the code
+#3 Run the code
 Put all the .fastq files, Main_VAMP.csv, Analysis_VAMP.csv and VAMP-Twist.csv under the working folder (see Row 24 in Main_VAMP.csv). Open Main.py, fill the address of Main_VAMP.csv at line 43 (parameter_file_name), and Analysis_VAMP.csv at Row 87 (VAMP_para). Set Row 82 run_plot_results to be False and Row 86 run_VAMP-analysis to be True. Run Main.py. 
 
-#Data plotting
+#4 Data plotting
 All mutational profiling analysis will be saved under a new "N_tile_logo_data" folder under working folder. For each base or base pair, only mutations at that position (including wild type) will be considered and calculated. All mutations' enrichment will be normalized to wild type and plotted in log2 scale. You will see the Weblogo showing the single base mutation profiling result with color annotated. For base pair result, you can open the base_pair_enrichment_normalized_log2.csv, save it as .xlsx file. The result is listed from top to bottom in a order of base pair position (based on its 5' base) , which can be found in the combined_position_pair_percent_VAMP.csv, Column 1. You can then plot the result using stacking bar graph in excel to generaete the plot. 
