@@ -62,8 +62,8 @@ limit = 1000
 # for mismatch filtering
 # If both are set to False but a subsequent step is set to True, the program looks for
 # previously mismatch filtered text files and uses those as the input for future steps
-run_Q_score_filter = False
-run_mismatch_filter = False
+run_Q_score_filter = True
+run_mismatch_filter = True
 
 # Sequence counting
 # count_sequences generates a dictionary of all possible sequences and their counts
