@@ -3,6 +3,7 @@ This is a code used to process the high-throughput sequencing data and analysis 
 Specifically, this project is designed to not only perform statistic analysis of mutational profiling library but also plot the result.
 
 #1 Mutational profiling library generation
+
 Open RNA_mutational_profiling_sequence_generate.py. You first need to fill the wild type tRNA sequence at line 14 (upper letter). Second, you need to fill in the pair index of tRNA at line 20. To avoid mistake, it is better to annotate the tRNA's base position. The index of all base pairs will be listed in a 5'base:3'base manner (index = base position -1). You can add tertiary base pair if it is needed. Third, you should replace the header sequence and tailer sequence at line 26,27 that you want to add before and after the tRNA sequence (e.g. for PCR). Then run this .py file and you will receive a .csv file containing all library members, which can be used for ordering oligo pool from Twist Bioscience. For data processing, please generate another .csv file (VAMP-Twist.csv) without head and tail sequence.
 
 #2 Filling data processing parameter file
